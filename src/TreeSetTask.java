@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import static java.lang.Integer.parseInt;
 
 
-public class TreeSetTask<W> {
+public class TreeSetTask {
     public static void main(String[] args) throws IOException {
         Comparator<Worker> workersComparator = new Comparator<Worker>() {
             @Override
