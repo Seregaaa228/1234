@@ -11,12 +11,13 @@ import static SetAnimals.Cat.removeCats;
 import static SetAnimals.Dog.createDogs;
 
 public class Main {
+
     public static void main(String[] args) {
-      Set cats = createCats();
+     Set cats = createCats();
       Set dogs =  createDogs();
       Set pets = join(cats, dogs);
 
-        removeCats(pets, cats);
+        removeCats(pets);
         printPets(pets);
 
 

@@ -5,6 +5,7 @@ import java.util.Set;
 
 abstract class Animals {
 
+
     public static Set join(Set cats, Set dogs) {
         HashSet pets = new HashSet(dogs);
 
@@ -12,6 +13,7 @@ abstract class Animals {
 
         return pets;
     }
+
 
     public static void printPets(Set pets) {
         for (Object object : pets) {
