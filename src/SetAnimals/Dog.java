@@ -3,14 +3,12 @@ package SetAnimals;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Dog extends Animals{
+public class Dog extends Animal {
 
-    public static Set createDogs()
-    {
+    public static Set createDogs() {
         HashSet result = new HashSet();
 
-        for(int i = 0; i < 3; i++)
-        {
+        for (int i = 0; i < 3; i++) {
             result.add(new Dog());
         }
 
@@ -18,7 +16,7 @@ public class Dog extends Animals{
     }
 
     @Override
-    public String toString() {
-        return "Dog";
+    void print() {
+        System.out.println("Dog");
     }
 }

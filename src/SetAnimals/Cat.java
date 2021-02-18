@@ -2,10 +2,10 @@ package SetAnimals;
 
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
-public class Cat extends Animals {
-
+public class Cat extends Animal {
 
 
     public static Set createCats() {
@@ -15,20 +15,15 @@ public class Cat extends Animals {
         }
         return result;
     }
-    public static  void  removeCats(Set pets){
-        Set copy = new HashSet<>();
-        copy.addAll(pets);
-        for (Object pet : copy){
-           if (pet instanceof  Cat){
-               pets.remove(pet);
-           }
 
-        }
+    public static void removeCats(Set animals) {
+        animals.removeIf(o -> o instanceof Cat);
+
     }
+
 
     @Override
-    public String toString() {
-        return "Cat";
+    void print() {
+        System.out.println("Cat");
     }
-
 }

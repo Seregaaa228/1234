@@ -3,7 +3,7 @@ package SetAnimals;
 import java.util.HashSet;
 import java.util.Set;
 
-abstract class Animals {
+abstract class Animal {
 
 
     public static Set join(Set cats, Set dogs) {
@@ -14,10 +14,8 @@ abstract class Animals {
         return pets;
     }
 
+    abstract void print();
 
-    public static void printPets(Set pets) {
-        for (Object object : pets) {
-            System.out.println(object);
-        }
-    }
+
 }
+
